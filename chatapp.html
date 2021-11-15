@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">-->
+    <link rel="stylesheet" href="/style1.css">
+    <title>iTalk</title>
+</head>
+
+<body>
+    <div class="video-container">
+        <video src="video3.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+    <div class="app body">
+
+        <div class="screen join active">
+            <div class="form">
+                <h2>Join ChatRoom</h2>
+                <div class="form-input">
+                    <label>Username</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="form-input">
+                    <button id="join-user">Join</button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="screen chat">
+            <div class="header">
+                <div class="logo">ChatRoom</div>
+                <button id="exit-chat">Exit</button>
+            </div>
+            <div class="messages">
+
+            </div>
+            <div class="typebox">
+                <input type="text" id="message-input" placeholder="Type Your Message Here...">
+
+                <button id="send-message">Send</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/chatclient.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+    <script>
+        $('#message-input').emojioneArea({
+            pickerPosition: 'top'
+        });
+    </script>
+</body>
+
+</html>
