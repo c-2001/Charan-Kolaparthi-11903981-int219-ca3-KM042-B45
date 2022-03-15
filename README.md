@@ -1,2 +1,2 @@
-# Charan-Kolaparthi-11903981-int219-ca3-KM042-B45
+# chat application using nodejs and socket.io
 This is a realtime chat app 
